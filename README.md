@@ -1,10 +1,11 @@
+# Arrays and Objects
+Our goal is to understand a little bit about how a computer manages memory within arrays and objects. Memory is laid out in a computer like a big tape. At any given time, the computer is focused on just a single point on the tape.
 
-- memory is laid out in a computer like a big tape. at any given time the computer is focused on just a single point on the tape.
+Note that these rules are all true for more classical languages like c, java, etc. Javascript doesn't always play by these rules. But you should still consider these to be "THE WAY" that memory is managed in these data structures.
 
-- note that these rules are all true for more classical languages like c, java, etc. js doesn't always play by these rules. https://stackoverflow.com/questions/20321047/how-are-javascript-arrays-represented-in-physical-memory
+https://stackoverflow.com/questions/20321047/how-are-javascript-arrays-represented-in-physical-memory
 
-* arrays
-
+## arrays
 - what all happens in the course of creating an empty array and pushing an element into it
   - allocate contiguous memory, note the beginning and the length
   - pushing a value into the array writes it into the next spot
@@ -22,13 +23,12 @@
   - then insert into the empty space
 
 
-* objects
-
+## objects
 - how do you think objects work under the hood, so that they achieve key-value pair functionality?
   - maybe two parallel arrays? one of keys and one of values?
   - some browsers do handle their objects this way! but it is not ideal, for reasons we can see later this afternoon
   - the problem is that if you want to access a key, you have to check keys one at a time to find the one you're after
-  
+
 - imagine an object that stored its info more like an array. the benefit being that an array doesn't have to loop through all its keys to get to the one we want.
   - an array stores values at an integer index, but we want to store a value associated w/ a string key. so we're going to have to convert our string key into an integer index
 

@@ -28,7 +28,9 @@ https://stackoverflow.com/questions/20321047/how-are-javascript-arrays-represent
   - maybe two parallel arrays? one of keys and one of values?
   - some browsers do handle their objects this way! but it is not ideal, for reasons we can see later this afternoon
   - the problem is that if you want to access a key, you have to check keys one at a time to find the one you're after
+  - check out `parallelArrays.js` to see how this could work
 
 - imagine an object that stored its info more like an array. the benefit being that an array doesn't have to loop through all its keys to get to the one we want.
   - an array stores values at an integer index, but we want to store a value associated w/ a string key. so we're going to have to convert our string key into an integer index
 
+- head over to `diyObject.js` for some hands-on learning about objects
